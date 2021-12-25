@@ -1,10 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6c63ff</color>
+    <color name="colorPrimaryDark">#514e7f</color>
+    <color name="colorAccent">#464353</color>
+    <color name="colorBiruIcon">#2F318B</color>
+
+    <color name="colorLight">#f8f9fa</color>
+
+    <!--    <color name="colorKuning">#FFC700</color>-->
+    <!--    <color name="colorBiru">#4F4BFF</color>-->
+    <!--    <color name="colorGreen">#8FD400</color>-->
+
+    <color name="qr_code_white">#FFFFFFFF</color>
+    <color name="qr_code_flashlight_bg">#B21BD4FF</color>
+    <color name="qr_code_finder_mask">#80000000</color>
+    <color name="qr_code_flash_light_text_color">#FFFFFFFF</color>
+    <color name="qr_code_finder_frame">#FFFFFFFF</color>
+    <color name="qr_code_finder_laser">#ef8394</color>
+
+    <color name="colorKuning">#F5CE31</color>
+    <color name="colorBiru">#859ded</color>
+    <color name="colorGreen">#79DB7A</color>
+    <color name="txtColorKuning">#ab5b05</color>
+    <color name="txtColorBiru">#555721</color>
+    <color name="txtColorGreen">#606141</color>
+
+    <color name="colorPlaceholder">#ECE1E1</color>
+    <color name="colorBiruTransparant">#4C5397</color>
+
+    <color name="colorKuningDark">#BDA028</color>
+    <color name="colorBiruDark">#5F6FA6</color>
+    <color name="colorGreenDark">#5DA85D</color>
+
+    <color name="placeholder_bg">#C6C5C5</color>
+
+    <color name="colorTintIconMenu">#74757E</color>
+
+    <color name="colorLightRed">#FFB0B2</color>
+    <color name="colorLightRed2">#F8CFD0</color>
+    <color name="colorLine2">#d9d9d9</color>
+    <color name="colorWhite">#ffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreyTransparent">#54110000</color>
+    <color name="colorGreyTransparent2">#79000000</color>
+    <color name="colorRedTransparent">#7C9D0B0E</color>
+
+    //text Color
+    <color name="txtWhite">#ffff</color>
+    <color name="txtSemiGrey">#868585</color>
+    <color name="txtBlack">#000000</color>
+    <color name="txtGrey">#868585</color>
+    <color name="txtGold">#FFC107</color>
+    <color name="txtRed">#9D0B0E</color>
+
+
+    <color name="textHint">#AFACAC</color>
+    <color name="grey">#868585</color>
+    <color name="bg">#F0CB82</color>
+
+    <color name="colorTextMenu">#b1b1b1</color>
+    <color name="colorTextSidebar">#4E5161</color>
+    <color name="colorRed">#e6051b</color>
+    <color name="colorLightBlue">#1F3AFF</color>
+    <color name="colorLine">#b7b7b7</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="bgbtmnav">#F7F7F7</color>
+    <color name="txtbtmnav">#B2B2B2</color>
+
+    <color name="yellow_pastel">#F7AF25</color>
+    <color name="yellow_pastel2">#F1662E</color>
+    <color name="blue_pastel">#7ADDD1</color>
+    <color name="red_pastel">#CD303B</color>
 </resources>
