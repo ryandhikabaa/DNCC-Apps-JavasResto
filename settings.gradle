@@ -1,0 +1,2 @@
+rootProject.name = "JavasResto"
+include ':app'
