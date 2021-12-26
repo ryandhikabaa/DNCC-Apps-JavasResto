@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "31.0.0"
 
     defaultConfig {
@@ -56,4 +56,5 @@ dependencies {
     //pengganti findviewByID
     implementation 'com.jakewharton:butterknife:10.0.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-script-runtime:1.5.31"
 }
