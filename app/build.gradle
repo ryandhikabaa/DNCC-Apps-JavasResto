@@ -30,6 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -44,6 +47,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //add library
+    implementation 'com.google.android.gms:play-services-auth:19.2.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.daimajia.androidanimations:library:2.3@aar'
@@ -52,6 +56,13 @@ dependencies {
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'com.github.f0ris.sweetalert:library:1.5.6'
+
+    //animation
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.github.f0ris.sweetalert:library:1.5.6'
+    implementation 'com.airbnb.android:lottie:4.2.1'
+
+    implementation 'com.shobhitpuri.custombuttons:google-signin:1.1.0'
 
     //pengganti findviewByID
     implementation 'com.jakewharton:butterknife:10.0.0'
