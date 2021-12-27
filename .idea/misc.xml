@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/drawable-anydpi/ic_action_back.xml" value="0.2462962962962963" />
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/drawable/bg_card_bottom.xml" value="0.2462962962962963" />
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/drawable/bg_card_round.xml" value="0.2462962962962963" />
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/drawable/bg_card_top.xml" value="0.2462962962962963" />
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/drawable/wave_2.xml" value="0.2462962962962963" />
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/layout/activity_dashboard.xml" value="0.19074074074074074" />
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/layout/activity_detail.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProject/DNCC-Apps-JavasResto/app/src/main/res/layout/list_row_product.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
