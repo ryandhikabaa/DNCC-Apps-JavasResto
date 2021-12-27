@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+    
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_action_back"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDetail"
+        android:layout_below="@+id/ivBack"
+        android:layout_width="364dp"
+        android:layout_height="165dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/ivDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scaleType="fitXY" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_alignStart="@id/cvDetail"
+        android:layout_alignLeft="@id/cvDetail"
+        android:id="@+id/tvName"
+        android:layout_below="@+id/cvDetail"
+        android:layout_marginTop="20dp"
+        android:text="Ayam"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvName"
+        android:layout_alignStart="@id/tvName">
+
+        <TextView
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="Kategori"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#000"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text=":"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="#000"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tvKategoriProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:text="..."
+            android:textColor="#000"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/line1"
+        android:layout_alignStart="@id/line1">
+
+        <TextView
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="Ket"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text=":"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tvDeskripsiProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:text="..."
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/line3"
+        android:layout_alignStart="@id/line3">
+
+        <TextView
+            android:layout_width="@dimen/_50ssp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="Harga"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text=":"
+            android:textColor="#000"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tvhargaProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:text="..."
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPesan"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@id/cvDetail"
+        android:layout_alignLeft="@id/cvDetail"
+        android:layout_alignEnd="@+id/cvDetail"
+        android:layout_alignRight="@+id/cvDetail">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/wa"/>
+
+            <TextView
+                android:layout_marginHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pesan"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

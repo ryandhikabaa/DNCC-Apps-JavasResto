@@ -6,10 +6,11 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import cn.pedant.SweetAlert.SweetAlertDialog
 import com.bumptech.glide.Glide
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -17,7 +18,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.tasks.OnCompleteListener
 import com.teamwork.javasresto.R
+import com.teamwork.javasresto.adapter.ProductAdapter
 import com.teamwork.javasresto.databinding.ActivityDashboardBinding
+import com.teamwork.javasresto.models.ProductModels
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -30,6 +33,7 @@ class DashboardActivity : AppCompatActivity() {
 //    var sEmail = ""
 //    var SPhoto = ""
 //    var sToken = ""
+    val list = ArrayList<ProductModels>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -149,6 +153,48 @@ class DashboardActivity : AppCompatActivity() {
         binding.rvMinuman.isVisible = false
         binding.rvDessert.isVisible = false
         binding.rvSnack.isVisible = false
+
+        list.clear()
+
+        val food1 = ProductModels(
+            R.drawable.off_category_food,
+            "Ayam Goreng Mentega",
+            "Makanan",
+            "Makanan",
+            12000
+        )
+        list.add(food1)
+
+        val food2 = ProductModels(
+            R.drawable.off_category_food,
+            "Nasi Goreng Oriental",
+            "Makanan",
+            "Makanan",
+            8000
+        )
+        list.add(food2)
+
+        val food3 = ProductModels(
+            R.drawable.off_category_food,
+            "Kwetiau Goreng Ayam",
+            "Makanan",
+            "Makanan",
+            10000
+        )
+        list.add(food3)
+
+        val food4 = ProductModels(
+            R.drawable.off_category_food,
+            "Sushi Roll Crispy",
+            "Makanan",
+            "Makanan",
+            17000
+        )
+        list.add(food4)
+
+        binding.rvMakanan.adapter = ProductAdapter(list)
+        binding.rvMakanan.layoutManager = GridLayoutManager(this, 2)
+
     }
 
     private fun onCategoryDrink(){
@@ -163,6 +209,48 @@ class DashboardActivity : AppCompatActivity() {
         binding.rvMinuman.isVisible = true
         binding.rvDessert.isVisible = false
         binding.rvSnack.isVisible = false
+
+        list.clear()
+
+        val drink1 = ProductModels(
+            R.drawable.off_category_drink,
+            "Jus",
+            "Minuman",
+            "Minuman",
+            8000
+        )
+        list.add(drink1)
+
+        val drink2 = ProductModels(
+            R.drawable.off_category_drink,
+            "Coffe",
+            "Minuman",
+            "Minuman",
+            8000
+        )
+        list.add(drink2)
+
+        val drink3 = ProductModels(
+            R.drawable.off_category_drink,
+            "Softdrink",
+            "Minuman",
+            "Minuman",
+            5000
+        )
+        list.add(drink3)
+
+        val drink4 = ProductModels(
+            R.drawable.off_category_drink,
+            "Air Mineral",
+            "Minuman",
+            "Minuman",
+            3000
+        )
+        list.add(drink4)
+
+        binding.rvMinuman.adapter = ProductAdapter(list)
+        binding.rvMinuman.layoutManager = GridLayoutManager(this, 2)
+
     }
 
     private fun onCategoryDessert(){
@@ -177,6 +265,48 @@ class DashboardActivity : AppCompatActivity() {
         binding.rvMinuman.isVisible = false
         binding.rvDessert.isVisible = true
         binding.rvSnack.isVisible = false
+
+        list.clear()
+
+        val dessert1 = ProductModels(
+            R.drawable.off_category_dessert,
+            "Puding",
+            "Dessert",
+            "Dessert",
+            10000
+        )
+        list.add(dessert1)
+
+        val dessert2 = ProductModels(
+            R.drawable.off_category_dessert,
+            "Es Krim",
+            "Dessert",
+            "Dessert",
+            8000
+        )
+        list.add(dessert2)
+
+        val dessert3 = ProductModels(
+            R.drawable.off_category_dessert,
+            "Pai",
+            "Dessert",
+            "Dessert",
+            10000
+        )
+        list.add(dessert3)
+
+        val dessert4 = ProductModels(
+            R.drawable.off_category_dessert,
+            "Cake",
+            "Dessert",
+            "Dessert",
+            10000
+        )
+        list.add(dessert4)
+
+        binding.rvDessert.adapter = ProductAdapter(list)
+        binding.rvDessert.layoutManager = GridLayoutManager(this, 2)
+
     }
 
     private fun onCategorySnack(){
@@ -191,6 +321,48 @@ class DashboardActivity : AppCompatActivity() {
         binding.rvMinuman.isVisible = false
         binding.rvDessert.isVisible = false
         binding.rvSnack.isVisible = true
+
+        list.clear()
+
+        val snack1 = ProductModels(
+            R.drawable.off_category_snack,
+            "Biskuit",
+            "Snack",
+            "Snack",
+            12000
+        )
+        list.add(snack1)
+
+        val snack2 = ProductModels(
+            R.drawable.off_category_snack,
+            "Muffin",
+            "Snack",
+            "Snack",
+            8000
+        )
+        list.add(snack2)
+
+        val snack3 = ProductModels(
+            R.drawable.off_category_snack,
+            "Donat",
+            "Snack",
+            "Snack",
+            10000
+        )
+        list.add(snack3)
+
+        val snack4 = ProductModels(
+            R.drawable.off_category_snack,
+            "Popcorn",
+            "Snack",
+            "Snack",
+            10000
+        )
+        list.add(snack4)
+
+        binding.rvSnack.adapter = ProductAdapter(list)
+        binding.rvSnack.layoutManager = GridLayoutManager(this, 2)
+
     }
 
     private fun soonFitur(){
@@ -203,4 +375,5 @@ class DashboardActivity : AppCompatActivity() {
             }
             .show()
     }
+
 }
