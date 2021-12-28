@@ -33,7 +33,7 @@ class ProductAdapter(private val productList : List<ProductModels>) : RecyclerVi
         holder.tvNameProduct.text = currentItem.productName
         holder.tvKategoriProduct.text = currentItem.productKat
         holder.tvDeskripsiProduct.text = currentItem.productKet
-        holder.priceProduct.text = currentItem.productPrice.toString()
+        holder.priceProduct.text = "Rp " + currentItem.productPrice.toString()
         holder.listRow.setOnClickListener {
 
             val bundle = Bundle()

@@ -157,38 +157,38 @@ class DashboardActivity : AppCompatActivity() {
         list.clear()
 
         val food1 = ProductModels(
-            R.drawable.off_category_food,
-            "Ayam Goreng Mentega",
+            R.drawable.gudeg,
+            "Gudeg",
             "Makanan",
-            "Makanan",
+            "Gudeg menjadi makanan khas jawa yang juga sangat terkenal di Indonesia, bahkan dunia. Menu ini sendiri sudah menjadi makanan favorit masyarakat Yogya sejak 1956, lho. Makanan ikonik ini punya tiga jenis gudeg, yaitu Gudeg Basah, Gudeg Maggar dan Gudeg Kering.",
             12000
         )
         list.add(food1)
 
         val food2 = ProductModels(
-            R.drawable.off_category_food,
-            "Nasi Goreng Oriental",
+            R.drawable.megono,
+            "Nasi Megono",
             "Makanan",
-            "Makanan",
-            8000
+            "Nasi Megono adalah makanan khas Jawa khususnya Pekolangan. Makanan ini seringkali ditawarkan sebagai menu sarapan lho, jadi bisa banget kamu menawarkan ini kepada orang-orang yang memang hobi makan nasi di pagi hari sebelum beraktivitas.",
+            10000
         )
         list.add(food2)
 
         val food3 = ProductModels(
-            R.drawable.off_category_food,
-            "Kwetiau Goreng Ayam",
+            R.drawable.rawon,
+            "Rawon",
             "Makanan",
-            "Makanan",
+            "Membicarakan tentang makanan khas Jawa, tidak lengkap jika tak memasukkan Rawon ke dalam daftar. Rawon sendiri adalah pilihan kuliner dari Jawa Timur, yang di dalamnya berisi irisan daging sapi empuk, dengan kuah hitam, serta kecambah mentah sebagai topping.",
             10000
         )
         list.add(food3)
 
         val food4 = ProductModels(
-            R.drawable.off_category_food,
-            "Sushi Roll Crispy",
+            R.drawable.tahutek,
+            "Tahu Tek",
             "Makanan",
-            "Makanan",
-            17000
+            "Sajian yang begitu menggugah selera ini berasal dari Surabaya, Jawa Timur, dengan siraman bumbu yang banyak, lontong, tahu, toge kecil dan kecambah sebagai bahan utamanya. Tahu tek sendiri adalah tahu goreng setengah matang dan lontong yang dipotong kecil, lalu disiram bumbu petis.",
+            15000
         )
         list.add(food4)
 
@@ -213,37 +213,37 @@ class DashboardActivity : AppCompatActivity() {
         list.clear()
 
         val drink1 = ProductModels(
-            R.drawable.off_category_drink,
-            "Jus",
+            R.drawable.kopijos,
+            "Kopi Joss",
             "Minuman",
-            "Minuman",
+            "kopi ini tidak hanya dikenal luas oleh masyarakat Indonesia lho, tetapi mancanegara juga. Kalau di luar negeri, orang-orang biasa menyebutnya The Charcoal Coffee. Penyajian kopi ini cukup nyentrik dan menarik dari kopi lainnya, di mana para penjual Kopi Joss biasanya menggunakan ketel atau teko besar sebagai wadah dan memasaknya menggunakan arang.",
             8000
         )
         list.add(drink1)
 
         val drink2 = ProductModels(
-            R.drawable.off_category_drink,
-            "Coffe",
+            R.drawable.birpletok,
+            "Bir Pletok",
             "Minuman",
-            "Minuman",
+            "Bir Pletok sebetulnya merupakan minuman asli dari tanah Betawi. Namun, minuman satu ini juga lazim ditemukan di sejumlah daerah di Jawa Tengah, sehingga masih bisa disebut minuman khas Jawa Tengah. Walaupun bernama ‘bir’, minuman satu ini tak akan membuat kamu mabuk.",
             8000
         )
         list.add(drink2)
 
         val drink3 = ProductModels(
-            R.drawable.off_category_drink,
-            "Softdrink",
+            R.drawable.bajigur,
+            "Bajigur",
             "Minuman",
-            "Minuman",
+            "Minuman ini sangat enak diseruput selagi hangat, serta ditemani sejumlah camilan misalnya pisang atau ubi rebus. Di Jawa Tengah, ada satu tempat yang cocok menyeruput minuman ini. tempat tersebut adalah Warung Bajigur Jae Iwan di daerah Sitanggal, Kecamatan, Larangan, Kabupaten Brebes, Jawa Tengah.",
             5000
         )
         list.add(drink3)
 
         val drink4 = ProductModels(
-            R.drawable.off_category_drink,
-            "Air Mineral",
+            R.drawable.wedanguwuh,
+            "Wedang Uwuh",
             "Minuman",
-            "Minuman",
+            "Tak hanya di Jawa Tengah, minuman satu ini juga bisa kamu temukan di Jogjakarta. Seperti bir pletok dan bajigur, minuman satu ini juga dibuat dari banyak rempah, serta mampu menghangatkan badan. Bahan-bahan tersebut adalah jahe, cengkeh, kayu manis, kayu secang, pala, kapulaga, gula batu, dan pala.",
             3000
         )
         list.add(drink4)
@@ -269,37 +269,37 @@ class DashboardActivity : AppCompatActivity() {
         list.clear()
 
         val dessert1 = ProductModels(
-            R.drawable.off_category_dessert,
-            "Puding",
+            R.drawable.bakpia,
+            "Bakpia",
             "Dessert",
-            "Dessert",
+            "Bakpia merupakan kue khas Yogyakarta yang paling terkenal di Jawa Tengah. Bakpia terbuat dari campuran kacang hijau dan gula yang dibungkus dengan adonan pia lalu dipanggang hingga matang. Bakpia bisa kamu temui hampir di semua toko pusat oleh-oleh khas Yogyakarta. Rasanya tidak terlalu manis dengan tekstur yang cukup empuk.",
             10000
         )
         list.add(dessert1)
 
         val dessert2 = ProductModels(
-            R.drawable.off_category_dessert,
-            "Es Krim",
+            R.drawable.serabi,
+            "Surabi Solo",
             "Dessert",
-            "Dessert",
+            "Surabi Solo dibuat menggunakan tepung beras. Surabi Solo juga menambahkan santan kelapa encer dalam surabi yang sudah setengah matang sehingga warna pada bagian atasnya terlihat lebih putih. Selain itu, surabi Solo hanya disantap begitu saja karena rasanya lebih gurih. ",
             8000
         )
         list.add(dessert2)
 
         val dessert3 = ProductModels(
-            R.drawable.off_category_dessert,
-            "Pai",
+            R.drawable.cenil,
+            "Cenil",
             "Dessert",
-            "Dessert",
+            "Cenil atau cetil terbuat dari pati ketela pohon yang dibentuk bulat-bulat kecil lalu diberi pewarna sebelum direbus hingga matang. Cenil disajikan dalam mangkuk yang terbuat dari daun pisang beserta taburan kelapa dan gula pasir.",
             10000
         )
         list.add(dessert3)
 
         val dessert4 = ProductModels(
-            R.drawable.off_category_dessert,
-            "Cake",
+            R.drawable.jadah,
+            "Jadah Manten",
             "Dessert",
-            "Dessert",
+            "Jadah manten terbuat dari beras ketan yang diisi dengan suwiran daging ayam atau sapi yang sudah dibumbui dengan aneka rempah-rempah lalu dibungkus dengan dadar gulung dan dijepit dengan menggunakan capitan bambu yang bentuknya seperti sumpit kemudian dibakar di atas arang hingga matang. Jadah manten ini disajikan bersama dengan santan kental yang gurih.",
             10000
         )
         list.add(dessert4)
@@ -325,37 +325,37 @@ class DashboardActivity : AppCompatActivity() {
         list.clear()
 
         val snack1 = ProductModels(
-            R.drawable.off_category_snack,
-            "Biskuit",
+            R.drawable.lumpia,
+            "Lumpia",
             "Snack",
-            "Snack",
+            "Lumpia terbuat dari lapisan gandum yang berisi sayuran dan suiran daging ayam atau hewan laut. Lumpia mempunyai 2 jenis yaitu lumpia basah dan lumpia kering yang perbedaannya terletak pada lapisan gandumnya saja.",
             12000
         )
         list.add(snack1)
 
         val snack2 = ProductModels(
-            R.drawable.off_category_snack,
-            "Muffin",
+            R.drawable.carabikan,
+            "Carabikang",
             "Snack",
-            "Snack",
+            "Kue carabikang atau cara bikan termasuk kue manis-gurih yang mengenyangkan karena dibuat dari tepung beras. Kue basah ini memiliki tekstur agak berserat namun lembut, cocok untuk menemani minum teh di pagi hari.",
             8000
         )
         list.add(snack2)
 
         val snack3 = ProductModels(
-            R.drawable.off_category_snack,
-            "Donat",
+            R.drawable.pukis,
+            "Pukis",
             "Snack",
-            "Snack",
+            "Pukis adalah satu snack sedap Jawa yang legendaris. Seperti putu ayu, teksturnya empuk. Rasanya juga manis. Pukis merupakan makanan khas Banyumas yang sekarang telah menyebar ke hampir seluruh wilayah Indonesia.",
             10000
         )
         list.add(snack3)
 
         val snack4 = ProductModels(
-            R.drawable.off_category_snack,
-            "Popcorn",
+            R.drawable.putu,
+            "Putu Ayu",
             "Snack",
-            "Snack",
+            "Putu ayu juga merupakan kudapan Jawa yang harus Anda nikmati. Rasanya manis-gurih dan tidak berat di perut. Bentuknya juga cantik dengan warna-warni yang menawan.",
             10000
         )
         list.add(snack4)

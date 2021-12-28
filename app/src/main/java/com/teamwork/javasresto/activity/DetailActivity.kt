@@ -24,7 +24,7 @@ class DetailActivity : AppCompatActivity() {
             binding.tvName.setText(bundle.getString("name"))
             binding.tvKategoriProduct.setText(bundle.getString("kat"))
             binding.tvDeskripsiProduct.setText(bundle.getString("ket"))
-            binding.tvhargaProduct.setText(bundle.getString("price"))
+            binding.tvhargaProduct.setText("Rp " + bundle.getString("price"))
         }
 
         binding.ivBack.setOnClickListener {
