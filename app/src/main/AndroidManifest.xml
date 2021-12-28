@@ -14,15 +14,18 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".activity.DetailActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppThemeNoAcitonBar" />
         <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.SplashActivity"></activity>
-        <activity android:name=".activity.DashboardActivity">
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".activity.DashboardActivity">
+
         </activity>
         <activity android:name=".MainActivity"></activity>
     </application>

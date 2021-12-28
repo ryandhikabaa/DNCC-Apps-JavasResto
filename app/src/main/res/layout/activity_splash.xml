@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_gravity="center">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_100sdp"
-        android:src="@drawable/ic_javasresto"/>
+        android:src="@drawable/ic_javasresto"
+        android:layout_centerInParent="true"/>
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Develop By."
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:textSize="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="A11.2021.13498 - Ryandhika Bintang A."
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:textSize="@dimen/_9ssp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="A11.2021.13405 - Nelvari Himyar A. A"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</RelativeLayout>

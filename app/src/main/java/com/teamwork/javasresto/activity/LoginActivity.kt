@@ -58,13 +58,23 @@ class LoginActivity : AppCompatActivity() {
             Log.d("RBA", "onShared: " + account.id.toString() +"\n" + account.displayName.toString() +"\n" + account.email.toString() +"\n" )
 
             // Signed in successfully, show authenticated UI.
-            sharedPreferences = getSharedPreferences(Config::SHARED_PREF_NAME.toString(), Context.MODE_PRIVATE)
-            sharedPreferences.edit()
-                .putString(Config::LOGIN_TOKEN_SHARED_PREF.toString(), account.id.toString())
-                .putString(Config::LOGIN_NAME_SHARED_PREF.toString(), account.displayName.toString())
-                .putString(Config::LOGIN_EMAIL_SHARED_PREF.toString(), account.email.toString())
-                .putString(Config::LOGIN_PICT_SHARED_PREF.toString(), account.photoUrl.toString())
-                .apply()
+            if (account.photoUrl == null) {
+                sharedPreferences = getSharedPreferences(Config::SHARED_PREF_NAME.toString(), Context.MODE_PRIVATE)
+                sharedPreferences.edit()
+                    .putString(Config::LOGIN_TOKEN_SHARED_PREF.toString(), account.id.toString())
+                    .putString(Config::LOGIN_NAME_SHARED_PREF.toString(), account.displayName.toString())
+                    .putString(Config::LOGIN_EMAIL_SHARED_PREF.toString(), account.email.toString())
+                    .apply()
+            }else{
+                sharedPreferences = getSharedPreferences(Config::SHARED_PREF_NAME.toString(), Context.MODE_PRIVATE)
+                sharedPreferences.edit()
+                    .putString(Config::LOGIN_TOKEN_SHARED_PREF.toString(), account.id.toString())
+                    .putString(Config::LOGIN_NAME_SHARED_PREF.toString(), account.displayName.toString())
+                    .putString(Config::LOGIN_EMAIL_SHARED_PREF.toString(), account.email.toString())
+                    .putString(Config::LOGIN_PICT_SHARED_PREF.toString(), account.photoUrl.toString())
+                    .apply()
+            }
+
             val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
             finish()

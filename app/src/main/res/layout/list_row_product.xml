@@ -23,7 +23,7 @@
                 android:id="@+id/ivProduct"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_150sdp"
-                android:scaleType="fitXY"
+                android:scaleType="centerCrop"
                 android:src="@drawable/placeholder" />
             <LinearLayout
                 android:layout_width="match_parent"

@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/Header"
             android:layout_marginHorizontal="@dimen/_24sdp"
-            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:orientation="vertical">
 
 
@@ -52,16 +52,56 @@
         <!--            android:layout_above="@+id/btnLogin"-->
         <!--            android:layout_centerHorizontal="true"/>-->
 
-        <com.shobhitpuri.custombuttons.GoogleSignInButton
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/google_sign_up"
-            app:isDarkTheme="false"
-            android:layout_marginBottom="@dimen/_20sdp"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:layout_alignParentBottom="true"
-            android:id="@+id/sign_in_button"
-            />
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <com.shobhitpuri.custombuttons.GoogleSignInButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/google_sign_up"
+                app:isDarkTheme="false"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:id="@+id/sign_in_button"
+                />
+            <LinearLayout
+                android:id="@+id/tvCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:textSize="@dimen/_11ssp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Develop By."
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:textSize="@dimen/_9ssp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="A11.2021.13498 - Ryandhika Bintang A."
+                    android:textColor="#000"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/_2sdp"
+                    android:textSize="@dimen/_9ssp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="A11.2021.13405 - Nelvari Himyar A. A"
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
     </RelativeLayout>
 
     <FrameLayout
